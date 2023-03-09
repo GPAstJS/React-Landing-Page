@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.newsletter-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #1F5FBA;
+    margin-top: 100px;
+    width: 1170px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.newsletter {
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.newsletter-paragraph {
+    color: #fff;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 550px;
+}
+
+.subscribe-newsletter {
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-btn {
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 65px;
+    width: 200px;
+}
