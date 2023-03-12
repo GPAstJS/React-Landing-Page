@@ -1,58 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .newsletter-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background: #1F5FBA;
-    margin-top: 100px;
-    width: 1170px;
-    height: 300px;
-    border-radius: 5px;
+  margin: 50rem 0rem 50rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rem;
+  width: 1440rem;
+  height: 100%;
+  border-radius: 5rem;
+}
+
+.newsletter-container {
+  display: flex;
+  border-radius: 5rem;
+  background: var(--defaultBlue);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 1150rem;
+  height: 250rem;
 }
 
 .newsletter {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .newsletter-title {
-    color: #fff;
-    font-size: 45px;
-    font-weight: bolder;
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 15px;
+  color: #fff;
+  font-size: 45rem;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15rem;
 }
 
 .newsletter-paragraph {
-    color: #fff;
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    width: 550px;
+  color: #fff;
+  font-size: 17rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  width: 550rem;
 }
 
 .subscribe-newsletter {
-    margin-left: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe-btn {
-    font-size: 16px;
-    font-weight: 500;
-    background: #fff;
-    border: none;
-    border-radius: 5px;
-    height: 65px;
-    width: 200px;
+  font-size: 16rem;
+  font-weight: 500;
+  background: #fff;
+  border: none;
+  border-radius: 5rem;
+  height: 65rem;
+  width: 200rem;
+}
+
+@media (max-width: 720px) {
+  .newsletter-section {
+    width: 720rem;
+    margin: 25rem 0rem 25rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsletter-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 2rem;
+    width: 350rem;
+    height: 100rem;
+  }
+
+  .subscribe-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsletter-title {
+    font-size: 12rem;
+    margin-left: 50rem;
+  }
+
+  .newsletter-paragraph {
+    font-size: 8rem;
+    width: 140rem;
+    margin-left: 50rem;
+  }
+
+  .subscribe-btn {
+    font-size: 8rem;
+    width: 75rem;
+    height: 30rem;
+    margin-right: 50rem;
+  }
 }

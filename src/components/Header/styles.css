@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+}
+
+.header {
+  background: var(--defaultBlue);
+  display: flex;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 1440rem;
+}
+
+.header-logo {
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 20rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500rem;
+}
+
+.nav-link {
+  color: #fff;
+  margin: 0rem 80rem 0rem 80rem;
+  font-size: 18px;
+  font-weight: 600;
+  background: var(--defaultBlue);
+  text-decoration: none;
+}
+
+.user-account {
+  width: max-content;
+  width: 230rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#sign-in {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#create-account {
+  display: flex;
+  border-radius: 2rem;
+  color: #000;
+  background: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  width: 120rem;
+  height: 40rem;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between!important;
+    width: 720px;
+  }
+
+  .header-container {
+    width: 720px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+  }
+
+  .header-logo {
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    font-size: 10rem;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0%;
+  }
+
+  .nav-link {
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .user-account {
+    display: flex;
+    flex-direction: row;
+    width: 100rem;
+  }
+
+  #create-account {
+    width: 50rem;
+    height: 30rem;
+  }
+}

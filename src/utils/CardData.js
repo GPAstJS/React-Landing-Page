@@ -2,7 +2,9 @@ const Card = [
     {
         plan: 'Free',
         label: 'Have a go and test your superpowers',
-        price: '$0',
+        yearPrice: '$0',
+        monthPrice: '$0',
+        width: '250rem',
         advice: 'Free Access',
         background: '#F9FAFC',
         features:['2 users', 'All apps', 'Unlimited editable exports', 'Chat support', 'New income apps'],
@@ -11,7 +13,9 @@ const Card = [
     {
         plan: 'Pro',
         label: 'Experiment the power of infinite possibilities',
-        price: '$8',
+        yearPrice: '$8',
+        monthPrice: '$0.60',
+        width: '250rem',
         advice: 'Save $50 a year',
         background: '#fff',
         features:['2 users', 'All apps', 'Unlimited editable exports', 'Chat support', 'New income apps'],
@@ -20,8 +24,10 @@ const Card = [
     {
         plan: 'Business',
         label: 'Unveil new superpowers and join the Design League',
-        price: '$16',
+        yearPrice: '$16',
+        monthPrice: '$1.30',
         advice: 'Save $100 a year',
+        width: '300rem',
         background: '#F9FAFC',
         features:['2 users', 'All apps', 'Unlimited editable exports', 'Chat support', 'New income apps'],
         buttonText: 'Go to business'
@@ -29,3 +35,4 @@ const Card = [
 ]
 
 export default Card
+

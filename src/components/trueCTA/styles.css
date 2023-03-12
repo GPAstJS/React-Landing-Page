@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.choose-plan-title {
+  font-weight: 900;
+  font-size: 50rem;
+  color: var(--defaultBlue);
+  margin: 20rem 0rem 20rem 0rem;
+}
+
+.choose-plan-text {
+  width: 860rem;
+  font-size: 16rem;
+}
+
+.action {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  width: 275rem !important;
+  height: 60rem !important;
+  margin: 40rem 0rem 40rem 0rem !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.choose-plan-btn {
+  height: 60rem;
+  border-radius: 5rem;
+  border: none;
+  width: 130rem;
+  height: 50rem;
+  background: #fff;
+  font-size: 18rem;
+}
+
+.choose-plan-btn:hover {
+  background-color: var(--defaultBlue);
+}
+
+@media (max-width: 720px) {
+
+  .main {
+    width: 720rem !important;
+  }
+
+  .choose-plan-title {
+    font-size: 20rem !important;
+  }
+
+  .choose-plan-text {
+    text-align: center !important;
+    font-size: 10rem !important;
+    width: 350rem !important;
+  }
+
+  .action {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100rem !important;
+    height: 30rem !important;
+  }
+
+  .choose-plan-btn {
+    border-radius: 1rem;
+    width: 45rem;
+    height: 25rem;
+    font-size: 8rem;
+  }
+}

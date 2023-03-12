@@ -7,7 +7,7 @@ export default function Help() {
         <section className="asked-questions-section">
             <div className="asked-questions-div">
                 <h1 className="asked-questions-title">Frequently Asked Questions</h1>
-                <p className="user-support">Can't able to find answers you're looking for? reach out to <a href="#">our team</a></p>
+                <p className="user-support">Can't able to find answers you're looking for? reach out to <a className="team-link" href="#">our team</a></p>
             </div>
             <div className="credit-card-div">
                 <div className="credit-card-question-div">

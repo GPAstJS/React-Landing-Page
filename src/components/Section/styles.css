@@ -1,0 +1,138 @@
+.features-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-section-container {
+  padding: 50rem 0rem 50rem 0rem;
+}
+
+.featuresh1 {
+  color: var(--defaultBlue);
+  font-size: 50rem;
+  font-weight: 900;
+  margin: 50rem 0rem 0rem 10rem;
+}
+
+#features-text {
+  font-size: 18rem;
+  margin: 20rem 0rem 0rem 0rem;
+  width: 950rem;
+  text-align: center;
+}
+
+.section-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.section-div:nth-child(2n) {
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 200rem 0rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.section-div:nth-child(3n) {
+  padding: 0rem 0rem 200rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.section-text-title {
+  margin: 0rem 0rem 0rem 0rem;
+  font-size: 50rem;
+  width: 700rem;
+}
+
+.section-text-paragraph {
+  font-size: 20rem;
+  text-align: left;
+  width: 600rem;
+}
+
+.section-text-paragraph:nth-child(2) {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+@media (max-width: 720px) {
+  .features-section-container {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .features-section {
+    width: 720rem !important;
+  }
+
+  .featuresh1 {
+    font-size: 20rem;
+  }
+
+  #features-text {
+    font-size: 10rem;
+    width: 300rem;
+    margin: 10rem 0rem 0rem 0rem;
+  }
+
+  .section-div:nth-child(2n) {
+    padding: 50rem 0rem 0rem 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-div:nth-child(3n) {
+    padding: 0rem 0rem 50rem 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-text-title:nth-child(1) {
+    width: 200rem;
+  }
+
+  .section-text-title { 
+    font-size: 20rem;
+    margin: 0rem 0rem 15rem 0rem;
+  }
+
+  .section-text-paragraph {
+    text-align: center;
+    font-size: 10rem;
+    width: 250rem;
+  }
+
+  .hero-img1 {
+    padding-bottom: 20rem;
+    height: 320px;
+    width: 344px
+
+  }
+
+  .hero-img2 {
+    padding-bottom: 30rem;
+    padding-top: 20rem;
+    padding-right: 25rem;
+    width: 380px;
+    height: 350px;
+  }
+}

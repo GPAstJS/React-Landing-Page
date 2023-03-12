@@ -1,85 +1,62 @@
+import "./App.css";
+
 import React from "react";
 
+import Accordeon from "./components/Accordeon/Accordeon";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Section from "./components/Section/Section";
-import Main from './components/Main/Main'
+import Costummers from "./components/Costummers";
 import Help from './components/Help/Help'
 import Newsletter from './components/Newsletter/Newsletter'
+import Section from "./components/Section/Section";
 
-import Card from "./components/Card/Card";
-import dataCard from "./utils/CardData";
+import CTA from './components/trueCTA/CTA'
 
-import Accordeon from "./components/Accordeon/Accordeon";
 import dataAccordeon from "./utils/AccordionData";
-
-
-import "./App.css";
 
 export default function App() {
   return (
     <div
       className="container"
       style={{
-        height: "6000px",
+        width: '100%',
         display: "flex",
         alignItems: "center",
+        justifyContent: 'center',
         flexDirection: "column",
+        margin: '0rem 0rem 0rem 0rem',
+        padding: '0rem 0rem 0rem 0rem'
       }}
     >
-      <div
+      <div className="box"
         style={{
-          width: "1440px",
+          margin: '0rem 0rem 0rem 0rem',
+          display: 'flex', 
+          alignItems: 'center',
+          flexDirection: 'column',
+          width: "1440rem",
+          padding: '0rem 0rem 0rem 0rem',
+          overflowX: 'hidden',
         }}
       >
         <Header />
         <Hero />
+        <Costummers />
         <Section />
-        <Main/>
 
-        {/* 1º
-            data, aqui dentro do map, é os dados dentro daquele array, no caso os objetos contendo
-            { titulo: 'coisaaqui', conteudo: 'coisasasasaqui' }
-            e como temos, data.titulo, ele se remete ao elemento sendo passado atualmente no map
-          */}
-        
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-          {dataCard.map((data) => (
-          <>
-            <Card
-              plan={data.plan}
-              label={data.label}
-              bg={data.background}  
-              width={'300px'}
-              price={data.price}
-              advice={data.advice}
-              features={data.features}
-              buttonText={data.buttonText}
-            />
-          </>
-        ))}</div>
-        <Help/>
+        <CTA />
+        <Help/> 
+
         {dataAccordeon.map((data) => (
-          /* 2º
-              Estamos fazendo o mapeamento do dataAccordeon, que é um array,
-              esse array tem o total de elementos que queremos criar,
-              por isso usamos arrays, ao inves de fazer na mão, e vai ter coisa que fazer na mão
-              será impossívelx'x'
-            */
           <>
-            {/* 3º
-                title={} content={} demos esses nomes, pois são requisitos da função dentro de Accordeon.jsx
-                fazendo isso, conseguimos passar dados diferentes e facilitar a passagem dos dados entre componentes
-               */}
             <Accordeon title={data.titulo} content={data.conteudo} />
           </>
         ))}
-      </div>
+
         <Newsletter/>
+        <Footer/> 
+      </div>
     </div>
   );
 }

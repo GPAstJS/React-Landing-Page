@@ -1,4 +1,3 @@
-
 import './style.css'
 
 export default function Card({
@@ -33,17 +32,11 @@ export default function Card({
         {price}
       </p>
       <p className='advice'>{advice}</p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          textAlign: "left",
-          width: "100%",
-          background: bg,
-          borderRadius: "10px",
-        }}
+      <div className='features-div' style={{
+        background: bg
+      }}
       >
-        {features.map((e, i) => (
+        {features.map((e) => (
           <p className='features'
             style={{
               marginLeft: "30px",
@@ -62,11 +55,10 @@ export default function Card({
             alignItems: "center",
             justifyContent: "center",
           }}
-        ><button className='button'>{buttonText}</button>
+        ><button className='feature-button'>{buttonText}</button>
           
         </div>
       </div>
     </div>
   );
 }
-

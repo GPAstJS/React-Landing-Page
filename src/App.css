@@ -2,7 +2,50 @@
 
 * {
   font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-style: none;
+  outline: none;
 } 
+
+:root {
+  --defaultBlue: #2076f0; 
+}
+
+html {
+  font-size: 1px;
+  -webkit-text-size-adjust: none;
+}
+
+
+
+button { cursor: pointer }
+
+@media (min-width: 721px) and (max-width: 1439px) {
+  html {
+    font-size: 0.0696111111vw;
+  }
+}
+
+@media (max-width: 720px) {
+  html {  
+    font-size: 0.27777777778vw;
+  }
+
+  .container {
+    width: 100% !important;
+    padding: 0rem 0rem 0rem 0rem !important;
+    margin: 0rem 0rem 0rem 0rem !important; 
+  }
+
+  .box {
+    width: 100vw !important;
+    padding: 0rem 0rem 0rem 0rem !important;
+    margin: 0rem 0rem 0rem 0rem !important;
+  }
+}
+
+
 
 /* .headerBtn {
   color: white;
