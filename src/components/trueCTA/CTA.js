@@ -5,8 +5,8 @@ import CardData from "../../utils/CardData";
 import './styles.css'
 
 
-export default function CTA(
-) {
+export default function CTA() {
+
   const [active, setActive] = useState({
     button1: false,
     button2: true,
@@ -86,7 +86,6 @@ export default function CTA(
             <Card
               plan={data.plan}
               label={data.label}
-              bg={data.bg}
               price={active.button1 ? data.monthPrice: data.yearPrice}
               bg={data.background}
               advice={data.advice}
